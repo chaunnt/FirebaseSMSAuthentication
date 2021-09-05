@@ -11,18 +11,17 @@
  * express or implied. See the License for the specific language governing permissions and
  * limitations under the License.
  */
-//Download these config from your firebase console
-  var config = {
-    apiKey: "<your key>",
-    authDomain: "<firebase domain>",
-    databaseURL: "<firebase realtime database>",
-    projectId: "<project id>",
-    storageBucket: "<bucket>",
-    messagingSenderId: "<senderId>",
-    appId: "<app id>"
-  };
+
+var config = {
+  apiKey: "AIzaSyAV2nGmkziNCzeplvSm4BwLtlZ4fsQYXJ4",
+  authDomain: "https://batdongsan-3d375.firebaseapp.com",
+  databaseURL: "https://your-app.firebaseio.com",
+  storageBucket: "your-app.appspot.com",
+};
 firebase.initializeApp(config);
+
 
 // Google OAuth Client ID, needed to support One-tap sign-up.
 // Set to null if One-tap sign-up is not supported.
-var CLIENT_ID = null;
+var CLIENT_ID =
+    'YOUR_OAUTH_CLIENT_ID';
