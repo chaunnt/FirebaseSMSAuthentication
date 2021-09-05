@@ -37,8 +37,7 @@ function getUiConfig() {
       }
     },
     // Opens IDP Providers sign-in flow in a popup.
-    'signInFlow': 'redirect',
-    'signInSuccessUrl': firebase.auth().currentUser !== null ? 'success.html?id=' + firebase.auth().currentUser.uid : '/success.html',
+    'signInFlow': 'popup',
     'signInOptions': [
       // TODO(developer): Remove the providers you don't need for your app.
       {
@@ -79,10 +78,7 @@ function getUiConfig() {
       {
         provider: 'apple.com',
       },
-      defaultCountry: 'VN',
-      defaultNationalNumber: '84',
-      loginHint: '+84123456789'
-      }
+      firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
     ],
     // Terms of service url.
     'tosUrl': 'https://www.google.com',
