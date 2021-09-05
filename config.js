@@ -13,15 +13,19 @@
  */
 
 var config = {
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
   apiKey: "AIzaSyAV2nGmkziNCzeplvSm4BwLtlZ4fsQYXJ4",
-  authDomain: "https://batdongsan-3d375.firebaseapp.com",
-  databaseURL: "https://your-app.firebaseio.com",
-  storageBucket: "your-app.appspot.com",
+  authDomain: "batdongsan-3d375.firebaseapp.com",
+  databaseURL: "https://batdongsan-3d375.firebaseio.com",
+  projectId: "batdongsan-3d375",
+  storageBucket: "batdongsan-3d375.appspot.com",
+  messagingSenderId: "101621387630",
+  appId: "1:101621387630:web:da68fdda9cbca04c2bb17f",
+  measurementId: "G-WL7DE4V7T1"
 };
 firebase.initializeApp(config);
 
 
 // Google OAuth Client ID, needed to support One-tap sign-up.
 // Set to null if One-tap sign-up is not supported.
-var CLIENT_ID =
-    'YOUR_OAUTH_CLIENT_ID';
+var CLIENT_ID = null;
